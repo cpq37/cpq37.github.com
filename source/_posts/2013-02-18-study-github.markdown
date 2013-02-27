@@ -61,8 +61,16 @@ __Create a new repository on the command line__
 	git init
 	git add README.md
 	git commit -m "first commit"
-	git remote add origin git@github.com:cpq37/cpq37.github.com.git
+	git remote add origin git@github.com:username/username.github.com.git
 	git push -u origin master
 __Push an existing repository from the command line__
-	git remote add origin git@github.com:cpq37/cpq37.github.com.git
+	git remote add origin git@github.com:username/username.github.com.git
 	git push -u origin master
+
+*以上是GIT的提示,我是使用如下命令进行的发布
+
+	rake deploy
+最后提交代码
+	git add .
+	git commit -a -m 'comment'
+	git push -u origin source
