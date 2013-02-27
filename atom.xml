@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2013-02-27T19:45:03+08:00</updated>
+  <id>http://yoursite.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[study github]]></title>
+    <link href="http://yoursite.com/blog/2013/02/27/study-github/"/>
+    <updated>2013-02-27T17:01:00+08:00</updated>
+    <id>http://yoursite.com/blog/2013/02/27/study-github</id>
+    <content type="html"><![CDATA[<h1>准备工作</h1>
+
+<ol>
+<li>在<a href="https://github.com">https://github.com/</a>中注册一个帐号。</li>
+<li>下载一个git,参考一篇<a href="http://rogerdudler.github.com/git-guide/index.zh.html">git入门指南</a>。</li>
+</ol>
+
+
+<p>参考资料：
+<a href="http://www.yangzhiping.com/tech/github.html">如何高效利用GitHub</a></p>
+
+<h2>如何使用GitHub写博客</h2>
+
+<p>可以在Github上快速搭建一个基于jekyll的博客系统</p>
+
+<ul>
+<li>Jekyll：参考<a href="http://www.yangzhiping.com/tech/wordpress-to-jekyll.html">告别wordpress，拥抱jekyll</a></li>
+<li><a href="http://www.mceiba.com/develop/jekyll-introduction.html">利用Jekyll搭建个人博客</a></li>
+<li>Octopress：参考Ruby开源项目介绍(1)：<a href="http://www.yangzhiping.com/tech/octopress.html">octopress——像黑客一样写博客</a></li>
+</ul>
+
+
+<p>由于我的系统平台是WindowXP,所以参考了 <a href="http://pezy.github.com/about/">5步搭建博客</a></p>
+
+<h4>第一步：</h4>
+
+<p>注册GitHub,注册完后，配置Git。这里没有谈到添加SSH密钥，可参考<a href="https://help.github.com/articles/generating-ssh-keys">Generating SSH Keys</a></p>
+
+<p><em><strong>注意：默认的22号端口有可能被占用或阻止，可建立一个config文件进行设置</strong></em></p>
+
+<pre><code>Host github.com
+User username@email.com
+Port 443
+Hostname ssh.github.com
+</code></pre>
+
+<p>请把<code>username@email.com</code>换成你的GitHub注册邮箱。</p>
+
+<p><em>single asterisks</em></p>
+
+<p><em>single underscores</em></p>
+
+<p><strong>double asterisks</strong></p>
+
+<p><strong>double underscores</strong>
+<img src="https://help.github.com/assets/help/logo-help-cc8a5cc88bc35f6b6431f44ac7a1c9bd.png" alt="Alt text" /></p>
+
+<h4>第二步：</h4>
+
+<p>搭建Ruby环境
+<em><strong>注意：我在我的机子上使用Git Bash无法启动ruby，因此我只好单独启动Ruby来完成第二、三、四步。</strong></em>
+<strong>可通过<code>我的电脑/属性/高级/环境变量</code>添加Ruby的路径，解决此问题</strong></p>
+
+<h4>第三步：</h4>
+
+<p>安装Octopress框架</p>
+
+<h4>第四步：</h4>
+
+<p>写一篇简单的blog进行测试。jekyll采用markdown格式的轻量级标记语言。
+关于markdown语言可参考<a href="http://wowubuntu.com/markdown/">Markdown 语法说明</a>。</br>
+<em><strong>注意：这步可能出现GBK编码错误。</strong></em></p>
+
+<h4>第五步</h4>
+
+<p>最后一步，要把本地文件部署到GitHub服务器上去。</p>
+
+<p><strong>Create a new repository on the command line</strong></p>
+
+<pre><code>touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:cpq37/cpq37.github.com.git
+git push -u origin master
+</code></pre>
+
+<p><strong>Push an existing repository from the command line</strong></p>
+
+<pre><code>git remote add origin git@github.com:cpq37/cpq37.github.com.git
+git push -u origin master
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
